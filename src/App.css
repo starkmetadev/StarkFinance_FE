@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+#walletConnect button {
+  background-color: transparent;
+  border-width: 1px;
+  border-color: #f2f3f599;
+  border-style: solid;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: medium;
+  font-weight: 550;
+  color: #f2f3f599;
+  transition: all 0.3s ease-in-out;
+  height: 36px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#walletConnect button:hover {
+  border-color: #f2f3f5;
+  color: #f2f3f5;
+}
