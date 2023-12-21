@@ -32,7 +32,11 @@ const Navbar = () => {
             />
           </div>
         </div>
-        <div className=""></div>
+        <div className="">
+          <button className="rounded-md text-textPrimary/60 hover:text-textPrimary border-textPrimary/60 hover:border-textPrimary border-[1px] px-5 py-1 transition-all duration-200 ease-linear cursor-pointer">
+            Connect Wallet
+          </button>
+        </div>
       </div>
     </>
   );
