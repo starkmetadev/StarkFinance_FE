@@ -1,5 +1,4 @@
 import { Icon } from "@iconify/react";
-import { Link } from "react-router-dom";
 
 const NavbarItem = ({ link, icon, title }) => {
   return (
@@ -10,7 +9,8 @@ const NavbarItem = ({ link, icon, title }) => {
       >
         <Icon
           icon={icon}
-          width={20}
+          width={22}
+          height={22}
           className="text-textPrimary/60 child1 group-hover:text-textPrimary transition-all duration-200 ease-linear"
         />
         <p className="text-textPrimary/60 child2 group-hover:text-textPrimary text-[16px] transition-all duration-200 ease-linear">

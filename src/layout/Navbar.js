@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 
 import NavbarItem from "../components/Navbar/NavbarItem";
 import navbarConstants from "../utils/navbarConstants";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -22,6 +23,14 @@ const Navbar = () => {
               icon={item.icon}
             />
           ))}
+          <div className="pt-3 pb-2">
+            <Icon
+              icon="basil:other-1-outline"
+              width={22}
+              height={22}
+              className="text-textPrimary/60 hover:text-textPrimary transition-all duration-200 ease-linear cursor-pointer"
+            />
+          </div>
         </div>
         <div className=""></div>
       </div>

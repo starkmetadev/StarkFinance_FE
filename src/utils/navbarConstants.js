@@ -1,5 +1,10 @@
 const navbarConstants = [
   {
+    link: "/dashboard",
+    icon: "ic:round-dashboard",
+    title: "Dashboard",
+  },
+  {
     link: "/staking",
     icon: "wpf:coins",
     title: "Staking",
@@ -10,13 +15,8 @@ const navbarConstants = [
     title: "Swap",
   },
   {
-    link: "/dashboard",
-    icon: "bi:currency-exchange",
-    title: "Dashboard",
-  },
-  {
     link: "/buy",
-    icon: "bi:currency-exchange",
+    icon: "icons8:buy",
     title: "Buy",
   },
 ];
