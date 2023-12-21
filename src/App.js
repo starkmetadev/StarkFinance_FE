@@ -3,19 +3,14 @@ import Footer from "./layout/Footer";
 import Navbar from "./layout/Navbar";
 import MainBoard from "./layout/MainBoard";
 
-import "./App.css";
-
-import "@rainbow-me/rainbowkit/styles.css";
-import {
-  getDefaultWallets,
-  RainbowKitProvider,
-  midnightTheme,
-  lightTheme,
-} from "@rainbow-me/rainbowkit";
+import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { mainnet, polygon, optimism, arbitrum, base, zora } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
+
+import "@rainbow-me/rainbowkit/styles.css";
+import "./App.css";
 
 const { chains, publicClient } = configureChains(
   [mainnet, polygon, optimism, arbitrum, base, zora],
@@ -37,15 +32,7 @@ const wagmiConfig = createConfig({
 function App() {
   return (
     <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider
-        chains={chains}
-        theme={lightTheme({
-          accentColor: "#7b3fe4",
-          accentColorForeground: "white",
-          borderRadius: "medium",
-          fontStack: "system",
-        })}
-      >
+      <RainbowKitProvider chains={chains}>
         <Router>
           <div className="App">
             <Navbar />
