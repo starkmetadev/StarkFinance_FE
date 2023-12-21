@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 import NavbarItem from "../components/Navbar/NavbarItem";
 import navbarConstants from "../utils/navbarConstants";
 import { Link } from "react-router-dom";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const Navbar = () => {
   return (
@@ -32,10 +33,8 @@ const Navbar = () => {
             />
           </div>
         </div>
-        <div className="">
-          <button className="rounded-md text-textPrimary/60 hover:text-textPrimary border-textPrimary/60 hover:border-textPrimary border-[1px] px-5 py-1 transition-all duration-200 ease-linear cursor-pointer">
-            Connect Wallet
-          </button>
+        <div className="flex flex-row items-center justify-center text-center">
+          <ConnectButton label="Wallet Connect"></ConnectButton>
         </div>
       </div>
     </>
