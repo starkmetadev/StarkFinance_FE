@@ -35,7 +35,7 @@ const SocialLink = [
     ),
   },
   {
-    link: "/dashboard",
+    link: "/",
     container: (
       <Icon
         icon="file-icons:telegram"
