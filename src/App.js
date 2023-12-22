@@ -21,12 +21,16 @@ import "./App.css";
 
 const { chains, publicClient } = configureChains(
   [mainnet, polygon, optimism, arbitrum, base, zora],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
+  [
+    alchemyProvider({ apiKey: process.env.REACT_APP_ALCHEMY_API_KEY }),
+    publicProvider(),
+  ]
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "My RainbowKit App",
-  projectId: "YOUR_PROJECT_ID",
+  // appName: "My RainbowKit App",
+  appName: process.env.REACT_APP_NAME,
+  projectId: process.env.REACT_APP_PROJECT_ID,
   chains,
 });
 
