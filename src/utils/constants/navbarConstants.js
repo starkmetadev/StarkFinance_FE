@@ -1,6 +1,6 @@
 const navbarConstants = [
   {
-    link: "/dashboard",
+    link: "/",
     icon: "ic:round-dashboard",
     title: "Dashboard",
   },
