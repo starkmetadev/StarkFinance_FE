@@ -2,7 +2,6 @@ import { Icon } from "@iconify/react";
 
 import NavbarItem from "../components/Navbar/NavbarItem";
 import navbarConstants from "../utils/constants/navbarConstants";
-import { Link } from "react-router-dom";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const Navbar = () => {

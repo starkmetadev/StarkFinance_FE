@@ -1,7 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./layout/Footer";
 import Navbar from "./layout/Navbar";
-import MainBoard from "./layout/MainBoard";
+import Dashboard from "./layout/Dashboard";
+import LayoutBuy from "./layout/Buy";
+import LayoutStaking from "./layout/Staking";
+import LayoutSwap from "./layout/Swap";
 
 import {
   darkTheme,
@@ -41,7 +44,10 @@ function App() {
           <div className="App">
             <Navbar />
             <Routes>
-              <Route exact path="/" element={<MainBoard />} />
+              <Route exact path="/" element={<Dashboard />} />
+              <Route exact path="/staking" element={<LayoutStaking />} />
+              <Route exact path="/swap" element={<LayoutSwap />} />
+              <Route exact path="/buy" element={<LayoutBuy />} />
             </Routes>
             <Footer />
           </div>

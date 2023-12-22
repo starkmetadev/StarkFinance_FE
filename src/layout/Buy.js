@@ -1,4 +1,4 @@
-const MainBoard = () => {
+const LayoutBuy = () => {
   return (
     <>
       <div className="w-full h-[100vh] bg-secondary"></div>
@@ -6,4 +6,4 @@ const MainBoard = () => {
   );
 };
 
-export default MainBoard;
+export default LayoutBuy;
